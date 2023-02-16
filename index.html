@@ -8,32 +8,37 @@
     <meta name="title" content="Développeur FullStack JS" />
     <meta
       name="description"
-      content="Développeur FullStack JS. Basé en Normandie, je réalise vos sites web mobile-friendly
-    dans le respect des normes et des chartes graphiques.
-    Accessibilité, HTML5, CSS3, SCSS, JS, jQuery, React
-    Je propose mes services pour des projets de développement web modernes et performants !"
+      content="Développeur Frontend spécialisé React. Basé en Normandie, je réalise vos sites web mobile-friendly
+      dans le respect des normes et des chartes graphiques.
+      Retrouvez mon profil Github, LinkedIn et contactez-moi !"
     />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://christophegouteux.fr/" />
+    <meta
+      property="og:image"
+      content="https://christophegouteux.fr/public/assets/developpeurweb.jpg"
+    />
     <meta property="og:title" content="Développeur FullStack JS" />
     <meta
       property="og:description"
-      content="Développeur FullStack JS. Basé en Normandie, je réalise vos sites web mobile-friendly
-    dans le respect des normes et des chartes graphiques.
-    Accessibilité, HTML5, CSS3, SCSS, JS, jQuery, PHP, React
-    Je propose mes services pour des projets de développement web modernes et performants !"
+      content="Développeur Frontend spécialisé React. Basé en Normandie, je réalise vos sites web mobile-friendly
+      dans le respect des normes et des chartes graphiques.
+      Retrouvez mon profil Github, LinkedIn et contactez-moi !"
     />
     <meta property="og:image" content="ressources/developpeurweb" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://christophegouteux.fr/" />
+    <meta
+      name="twitter:image"
+      content="https://christophegouteux.fr/public/assets/developpeurweb.jpg"
+    />
     <meta property="twitter:title" content="Développeur FullStack JS" />
     <meta
       property="twitter:description"
-      content="Développeur FullStack JS. Basé en Normandie, je réalise vos sites web mobile-friendly
+      content="Développeur Frontend spécialisé React. Basé en Normandie, je réalise vos sites web mobile-friendly
     dans le respect des normes et des chartes graphiques.
-    Accessibilité, HTML5, CSS3, SCSS, JS, jQuery, PHP, React
     Retrouvez mon profil Github, LinkedIn et contactez-moi !"
     />
     <meta property="twitter:image" content="ressources/developpeurweb" />
@@ -44,12 +49,17 @@
     <meta name="author" content="Christophe Gouteux" />
     <meta name="robots" content="index, follow" />
     <!-- Import des polices de caractères -->
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
     <!-- Import des scripts Font Awesome et style CSS Bulma -->
-    <script src="https://kit.fontawesome.com/75e1cd7def.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/75e1cd7def.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
@@ -72,14 +82,40 @@
     <section class="hero is-medium">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-1">Hello Parallax</h1>
-          <h2 class="subtitle">
-            A simple boilerplate for setting up parallax <br />
-            using the Bulma Hero container.
-          </h2>
-          <a href="#" class="button is-white is-medium is-inverted"
-            >Learn More&ensp;<i class="fad fa-chevron-right"></i
-          ></a>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1
+                class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"
+              >
+                Frontend Developer
+              </h1>
+              <h2 class="subtitle is-size-4-tablet">
+                Passionné, curieux, je suis à la recherche de mon prochain poste
+              </h2>
+              <img
+                class="image is-inline-block is-128x128"
+                src="./public/assets/react_logo.png"
+              />
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column">
+              <div class="buttons is-centered">
+                <a class="button is-info navbar-item" href="">
+                  About
+                </a>
+                <a class="button is-info navbar-item" href="">
+                  Skills
+                </a>
+                <a class="button is-info navbar-item" href="">
+                  Projects
+                </a>
+                <a class="button is-info navbar-item" href="">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -96,9 +132,7 @@
                 explicabo amet magni illum eum voluptate! Eveniet voluptatem nam
                 magnam necessitatibus.
               </h2>
-              <a href="#" class="button is-white is-inverted"
-                >Next&ensp;<i class="fad fa-chevron-right"></i
-              ></a>
+              <a href="#" class="button is-white is-inverted">Next</a>
             </div>
           </div>
         </div>
@@ -117,9 +151,7 @@
                 Doloremque veritatis sequi natus minima distinctio ullam
                 deleniti quasi quisquam autem deserunt.
               </h2>
-              <a href="#" class="button is-white is-inverted"
-                >Next&ensp;<i class="fad fa-chevron-right"></i
-              ></a>
+              <a href="#" class="button is-white is-inverted">Next</a>
             </div>
           </div>
         </div>
@@ -138,9 +170,7 @@
                 minus nam necessitatibus neque in perferendis eveniet dolorum
                 assumenda dolores accusamus.
               </h2>
-              <a href="#" class="button is-white is-inverted"
-                >Next&ensp;<i class="fad fa-chevron-right"></i
-              ></a>
+              <a href="#" class="button is-white is-inverted">Next</a>
             </div>
           </div>
         </div>
