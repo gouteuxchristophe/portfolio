@@ -18,3 +18,18 @@ body {
     overflow: hidden;
 }
 
+.content-divider {
+    margin: 0 auto;
+}
+
+.skill-container {
+    background-color: rgba(28, 26, 27, 0.5);
+    border-radius: 15px;
+}
+
+.skill-container img {
+    padding: 1rem;
+    border: 5px solid #e3e3e3;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 5px #ffffff;
+}
