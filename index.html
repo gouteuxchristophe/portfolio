@@ -62,7 +62,7 @@
     ></script>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./public/css/hello-parallax.css" />
     <!-- Import du reset et style CSS -->
@@ -79,6 +79,7 @@
 
   <body>
     <!-- Header -->
+    
     <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
@@ -101,18 +102,10 @@
           <div class="columns is-centered">
             <div class="column">
               <div class="buttons is-centered">
-                <a class="button is-info navbar-item" href="">
-                  About
-                </a>
-                <a class="button is-info navbar-item" href="">
-                  Skills
-                </a>
-                <a class="button is-info navbar-item" href="">
-                  Projects
-                </a>
-                <a class="button is-info navbar-item" href="">
-                  Contact
-                </a>
+                <a class="button is-info navbar-item" href=""> About </a>
+                <a class="button is-info navbar-item" href=""> Skills </a>
+                <a class="button is-info navbar-item" href=""> Projects </a>
+                <a class="button is-info navbar-item" href=""> Contact </a>
               </div>
             </div>
           </div>
@@ -120,23 +113,54 @@
       </div>
     </section>
     <!-- A propos -->
-    <section id="parallax-1" class="hero is-fullheight">
+    <section id="parallax-1" class="hero is-medium">
       <div class="hero-body">
-        <div class="container mb-2">
-          <div class="columns is-centered">
-            <div class="column is-three-fifths has-text-centered">
-              <h1 class="title is-spaced is-size-1-desktop is-size-4-mobile">Hi, I’m Christophe !</h1>
-              <figure class="image is-inline-block is-128x128 is-clipped">
-                <img class="is-rounded is-inline-block" src="./public/assets/profil-pic.png">
-              </figure>
-              <p class="content is-large">Ancien conseiller en relations clients, passionné par la conception de différents projets informatique,  j'ai décidé de me réorienter pour devenir développeur front-end, spécialisé REACT. 
-                Curieux, motivé, j'ai une grande aisance pour apprendre de nouveaux langages. Je suis prêt à découvrir de nouvelles technologies et à relever de nouveaux défis professionnels.</p>
-                <a class="button is-size-5-desktop has-text-weight-normal is-info" href="">
-                  <span class="icon">
-                    <i class="fas fa-download"></i>
-                  </span>
-                  <span>Download CV</span>
-                </a>
+        <div class="container mb-2 has-text-centered">
+          <div class="columns">
+            <div
+              class="is-flex is-flex-direction-column is-justify-content-space-between is-align-items-center"
+            >
+              <h1 class="title is-spaced is-size-1-desktop is-size-4-mobile">
+                Hi, I’m Christophe !
+              </h1>
+              <div class="main_pict-elt">
+                <img
+                  class="profil-pic"
+                  src="./public/assets/profil-pic.png"
+                  alt="Image qui représente le logo du language de développement web React"
+                />
+              </div>
+              <div class="columns is-vcentered">
+                <div class="column">
+                  <h2 class="subtitle is-size-5-desktop has-text-weight-normal">
+                    Ancien conseiller en relations clients, passionné par la
+                    conception de différents projets informatique, j'ai décidé
+                    de me réorienter pour devenir développeur front-end,
+                    spécialisé REACT. Curieux, motivé, j'ai une grande aisance
+                    pour apprendre de nouveaux langages. Je suis prêt à
+                    découvrir de nouvelles technologies et à relever de nouveaux
+                    défis professionnels.
+                  </h2>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="columns is-centered mt-6">
+            <a
+              class="button is-size-5-desktop has-text-weight-normal is-info"
+              href=""
+            >
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Download CV</span>
+            </a>
+          </div>
+          <div class="column mt-6">
+            <div class="buttons is-centered">
+              <a class="button is-black navbar-item" href=""> Github </a>
+              <a class="button is-black navbar-item" href=""> Linkedin </a>
             </div>
           </div>
         </div>
