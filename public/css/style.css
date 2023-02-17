@@ -99,3 +99,99 @@ body {
     }
    
   }
+
+/* Gestion de l'effet cube en roration */
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+  }
+  
+  .avant {
+    transform: translateZ(50px);
+  }
+  
+  .haut {
+    transform: rotateX(90deg) translateZ(50px);
+  }
+  
+  .gauche {
+    transform: rotateY(-90deg) translateZ(50px);
+  }
+  
+  .droite {
+    transform: rotateY(90deg) translateZ(50px);
+  }
+  
+  .bas {
+    transform: rotateX(-90deg) translateZ(50px);
+  }
+  
+  .arriere {
+    transform: rotateY(-180deg) translateZ(50px);
+  }
+  
+  #cube3a,
+  #cube3b,
+  #cube3c,
+  #cube3d {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    transform-style: preserve-3d;
+  }
+  
+  #cube3a {
+    perspective: 800px;
+  }
+  
+  #cube3b {
+    animation: rotationX 5s ease infinite;
+  }
+  
+  #cube3c {
+    animation: rotationY 7s ease infinite;
+  }
+  
+  #cube3d {
+    animation: rotationZ 9s ease infinite;
+  }
+  
+  @keyframes cube {
+    from {
+      transform: rotateY(-20deg) rotateX(-20deg);
+    }
+    to {
+      transform: rotateY(-380deg) rotateX(-20deg);
+    }
+  }
+  @keyframes rotationX {
+    from {
+      transform: rotateX(30deg);
+    }
+    to {
+      transform: rotateX(390deg);
+    }
+  }
+  @keyframes rotationY {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotationZ {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+/* .slider-navigation-next, .slider-navigation-previous {
+    display: none;
+} */

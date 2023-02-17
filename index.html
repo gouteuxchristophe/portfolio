@@ -65,6 +65,7 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./public/css/hello-parallax.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <!-- Import du reset et style CSS -->
     <link rel="stylesheet" href="./public/css/reset.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
@@ -89,6 +90,13 @@
                 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"
               >
                 Frontend Developer
+                <div class="container">
+                  <div id="carousel-title" class="carousel">
+                    <div class="carousel-item"><strong>web</strong></div>
+                    <div class="carousel-item"><strong>Fullstack JS</strong></div>
+                    <div class="carousel-item"><strong>React</strong></div>
+                  </div>
+                </div>
               </h1>
               <h2 class="subtitle is-size-4-tablet">
                 Passionné, curieux, je suis à la recherche de mon prochain poste
@@ -102,10 +110,10 @@
           <div class="columns is-centered">
             <div class="column">
               <div class="buttons is-centered">
-                <a class="button is-info navbar-item" href=""> About </a>
-                <a class="button is-info navbar-item" href=""> Skills </a>
-                <a class="button is-info navbar-item" href=""> Projects </a>
-                <a class="button is-info navbar-item" href=""> Contact </a>
+                <a class="button is-info navbar-item" href="#parallax-1"> About </a>
+                <a class="button is-info navbar-item" href="#parallax-2"> Skills </a>
+                <a class="button is-info navbar-item" href="#parallax-3"> Projects </a>
+                <a class="button is-info navbar-item" href="#contact"> Contact </a>
               </div>
             </div>
           </div>
@@ -243,63 +251,134 @@
             <div class="column">
               <h1 class="title is-1 has-text-centered">Mes projets récents</h1>
               <hr class="content-divider" />
-              <div class="columns mt-5 is-multiline is-flex is-justify-content-space-around ">
+              <div
+                class="columns mt-5 is-multiline is-flex is-justify-content-space-around"
+              >
                 <div class="column flipCard">
                   <div class="flipCardInner">
                     <div class="flipCardFront">
-                      <img src="./public/assets/projects/webagency.png" alt="">
+                      <img
+                        src="./public/assets/projects/webagency.png"
+                        alt=""
+                      />
                     </div>
                     <div class="flipCardBack">
-                      <p class="subtitle is-size-5-desktop has-text-weight-normal">Premier projet de formation concernant un site vitrine pour une agence web. Ce projet a été réalisé uniquement en HTML et CSS avec diaporama.</p>
-                      <a class="button is-primary is-outlined is-rounded" href="https://webagency.christophegouteux.fr/" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                      <p
+                        class="subtitle is-size-5-desktop has-text-weight-normal"
+                      >
+                        Premier projet de formation concernant un site vitrine
+                        pour une agence web. Ce projet a été réalisé uniquement
+                        en HTML et CSS avec diaporama.
+                      </p>
+                      <a
+                        class="button is-primary is-outlined is-rounded"
+                        href="https://webagency.christophegouteux.fr/"
+                        target="_blank"
+                        ><span>Visit Website</span
+                        ><span class="icon"
+                          ><i class="fas fa-angle-right"></i></span
+                      ></a>
                     </div>
                   </div>
                 </div>
                 <div class="column flipCard">
                   <div class="flipCardInner">
                     <div class="flipCardFront">
-                      <img src="/public/assets/projects/ireki.png" alt="">
+                      <img src="/public/assets/projects/ireki.png" alt="" />
                     </div>
                     <div class="flipCardBack">
-                      <p class="subtitle is-size-5-desktop has-text-weight-normal">Site Wordpress concernant l'office de tourisme de la ville d'Ireki. Ce projet utilise un gestionnaire d'évènements avec la possibilité de réservation en ligne. </p>
-                      <a class="button is-primary is-outlined is-rounded" href="https://ireki.christophegouteux.fr/" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                      <p
+                        class="subtitle is-size-5-desktop has-text-weight-normal"
+                      >
+                        Site Wordpress concernant l'office de tourisme de la
+                        ville d'Ireki. Ce projet utilise un gestionnaire
+                        d'évènements avec la possibilité de réservation en
+                        ligne.
+                      </p>
+                      <a
+                        class="button is-primary is-outlined is-rounded"
+                        href="https://ireki.christophegouteux.fr/"
+                        target="_blank"
+                        ><span>Visit Website</span
+                        ><span class="icon"
+                          ><i class="fas fa-angle-right"></i></span
+                      ></a>
                     </div>
                   </div>
                 </div>
                 <div class="column flipCard">
                   <div class="flipCardInner">
                     <div class="flipCardFront">
-                      <img src="/public/assets/projects/cyclicrouen.png" alt="">
+                      <img
+                        src="/public/assets/projects/cyclicrouen.png"
+                        alt=""
+                      />
                     </div>
                     <div class="flipCardBack">
-                      <p class="subtitle is-size-5-desktop has-text-weight-normal">Réservation de location de vélo sur la ville de Rouen. Utilisation de l'API JC Decaux. Site web réalisé en POO (programmation orienté objet).</p>
-                      <a class="button is-primary is-outlined is-rounded" href="https://cyclicrouen.christophegouteux.fr/" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                      <p
+                        class="subtitle is-size-5-desktop has-text-weight-normal"
+                      >
+                        Réservation de location de vélo sur la ville de Rouen.
+                        Utilisation de l'API JC Decaux. Site web réalisé en POO
+                        (programmation orienté objet).
+                      </p>
+                      <a
+                        class="button is-primary is-outlined is-rounded"
+                        href="https://cyclicrouen.christophegouteux.fr/"
+                        target="_blank"
+                        ><span>Visit Website</span
+                        ><span class="icon"
+                          ><i class="fas fa-angle-right"></i></span
+                      ></a>
                     </div>
                   </div>
                 </div>
                 <div class="column flipCard">
                   <div class="flipCardInner">
                     <div class="flipCardFront">
-                      <img src="/public/assets/projects/game.png" alt="">
+                      <img src="/public/assets/projects/game.png" alt="" />
                     </div>
                     <div class="flipCardBack">
-                      <p class="subtitle is-size-5-desktop has-text-weight-normal">Projet réalisé en cours de formation. Réalisation du jeu de bataille de carte pour deux joueurs en JavaScript</p>
-                      <a class="button is-primary is-outlined is-rounded" href="https://game.christophegouteux.fr/" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                      <p
+                        class="subtitle is-size-5-desktop has-text-weight-normal"
+                      >
+                        Projet réalisé en cours de formation. Réalisation du jeu
+                        de bataille de carte pour deux joueurs en JavaScript
+                      </p>
+                      <a
+                        class="button is-primary is-outlined is-rounded"
+                        href="https://game.christophegouteux.fr/"
+                        target="_blank"
+                        ><span>Visit Website</span
+                        ><span class="icon"
+                          ><i class="fas fa-angle-right"></i></span
+                      ></a>
                     </div>
                   </div>
                 </div>
                 <div class="column flipCard">
                   <div class="flipCardInner">
                     <div class="flipCardFront">
-                      <img src="/public/assets/projects/todolist.png" alt="">
+                      <img src="/public/assets/projects/todolist.png" alt="" />
                     </div>
                     <div class="flipCardBack">
-                      <p class="subtitle is-size-5-desktop has-text-weight-normal">Application node Js / Express pour la gestion de to do list</p>
-                      <a class="button is-primary is-outlined is-rounded" href="https://github.com/gouteuxchristophe/todolist" target="_blank"><span>Visit Website</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+                      <p
+                        class="subtitle is-size-5-desktop has-text-weight-normal"
+                      >
+                        Application node Js / Express pour la gestion de to do
+                        list
+                      </p>
+                      <a
+                        class="button is-primary is-outlined is-rounded"
+                        href="https://github.com/gouteuxchristophe/todolist"
+                        target="_blank"
+                        ><span>Visit Website</span
+                        ><span class="icon"
+                          ><i class="fas fa-angle-right"></i></span
+                      ></a>
                     </div>
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
@@ -307,49 +386,71 @@
       </div>
     </section>
     <!-- Formulaire de contact -->
-    <section class="cta va is-fullheight">
+    <section id="contact" class="cta va is-fullheight">
       <div class="container">
         <div class="columns">
           <div class="column is-6">
-            <h1 class="title is-1">Adipisicing Elit</h1>
+            <h1 class="title is-1 has-text-centered">Me contacter</h1>
             <hr class="content-divider" />
-            <h2 class="subtitle">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ut
-              nulla maiores, beatae voluptas sunt excepturi deserunt vero.
-              Beatae est ratione quia neque molestias, cum asperiores quibusdam
-              rem illum, debitis dolorem natus, eos fuga eveniet numquam ab
-              officia reiciendis inventore. Tempore repudiandae exercitationem
-              quisquam? Fugiat!
-            </h2>
+            <div
+              class="social-icons mt-5 is-flex is-justify-content-space-evenly"
+            >
+              <a
+                class="button is-medium is-rounded"
+                href="https://linkedin.com/in/matthew-farley-32526014/"
+                target="_blank"
+                ><span class="icon is-small"
+                  ><i class="fab fa-linkedin-in fa-fw"></i></span></a
+              ><a
+                class="button is-medium is-rounded"
+                href="https://github.com/gouteuxchristophe"
+                target="_blank"
+                ><span class="icon is-small"
+                  ><i class="fa-brands fa-github"></i></span></a
+              ><a
+                class="button is-medium is-rounded"
+                href="mailto:chris.gouteux@outlook.fr"
+                ><span class="icon is-small"
+                  ><i class="far fa-envelope fa-fw"></i></span
+              ></a>
+            </div>
           </div>
           <div class="column is-6">
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <input
-                  class="input is-medium"
-                  type="text"
-                  placeholder="Jon Snow"
-                />
-              </div>
-            </div>
-            <br />
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control">
-                <input
-                  class="input is-medium"
-                  type="email"
-                  placeholder="jon@winterfell.com"
-                />
-              </div>
-            </div>
-            <br />
-            <div class="field is-grouped">
-              <div class="control">
-                <button class="button is-white is-rounded is-outlined">
-                  Submit
-                </button>
+            <div id="cube3a">
+              <div id="cube3b">
+                <div id="cube3c">
+                  <div id="cube3d">
+                    <img
+                      class="face avant"
+                      src="./public/assets/logo_cube/brand-github.png"
+                      alt="Image qui représente le logo du langage web react sur une face du cube"
+                    />
+                    <img
+                      class="face haut"
+                      src="./public/assets/logo_cube/sass.png"
+                      alt="Image qui représente le logo du langage web sass sur une face du cube"
+                    />
+                    <img
+                      class="face gauche"
+                      src="./public/assets/logo_cube/code-php.png"
+                      alt="lImage qui représente le logo du langage web javascript sur une face du cube"
+                    />
+                    <img
+                      class="face droite"
+                      src="./public/assets/logo_cube/html_css.png"
+                      alt="Image qui représente le logo du versionning github sur une face du cube"
+                    />
+                    <img
+                      class="face bas"
+                      src="./public/assets/logo_cube/js.png"
+                    />
+                    <img
+                      class="face arriere"
+                      src="./public/assets/logo_cube/react.png"
+                      alt="Image qui représente le logo fullstack sur une face du cube"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -359,12 +460,13 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          Copyright Christophe Gouteux - 2023 - Réalisé with <strong>Bulma</strong>
-          
+          Copyright Christophe Gouteux - 2023 - Réalisé with
+          <strong>Bulma</strong>
         </p>
       </div>
     </footer>
   </body>
   <!-- Import des scripts JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
   <script src="./public/js/app.js"></script>
 </html>
