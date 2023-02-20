@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://christophegouteux.fr/" />
     <meta
       property="og:image"
-      content="https://christophegouteux.fr/public/assets/developpeurweb.jpg"
+      content="https://christophegouteux.fr/developpeurweb.webp"
     />
     <meta property="og:title" content="Développeur FullStack JS" />
     <meta
@@ -32,7 +32,7 @@
     <meta property="twitter:url" content="https://christophegouteux.fr/" />
     <meta
       name="twitter:image"
-      content="https://christophegouteux.fr/public/assets/developpeurweb.jpg"
+      content="https://christophegouteux.fr/developpeurweb.webp"
     />
     <meta property="twitter:title" content="Développeur FullStack JS" />
     <meta
@@ -49,7 +49,7 @@
     <meta name="author" content="Christophe Gouteux" />
     <meta name="robots" content="index, follow" />
     <!-- Import des polices de caractères -->
-    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
@@ -65,55 +65,79 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./public/css/hello-parallax.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"
+    />
     <!-- Import du reset et style CSS -->
     <link rel="stylesheet" href="./public/css/reset.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
     <!-- Ajout du favicon -->
     <link
       rel="shortcut icon"
-      href="./public/assets/favicon.png"
+      href="./public/assets/favicon.webp"
       type="image/x-icon"
     />
     <title>Portfolio Christophe Gouteux</title>
   </head>
 
-  <body>
+  <body class="is-clipped">
     <!-- Header -->
 
     <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
-          <div class="columns is-centered">
+          <div class="columns is-flex">
             <div class="column has-text-centered">
               <h1
                 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"
               >
                 Frontend Developer
-                <div class="container">
-                  <div id="carousel-title" class="carousel">
-                    <div class="carousel-item"><strong>web</strong></div>
-                    <div class="carousel-item"><strong>Fullstack JS</strong></div>
-                    <div class="carousel-item"><strong>React</strong></div>
-                  </div>
-                </div>
               </h1>
+              <div class="container">
+                <div class="slider">
+                  <h2 class="slider-item title is-size-1">
+                    <strong>web</strong>
+                  </h2>
+                  <h2 class="slider-item title is-size-1">
+                    <strong>Fullstack JS</strong>
+                  </h2>
+                  <h2 class="slider-item title is-size-1">
+                    <strong>React</strong>
+                  </h2>
+                </div>
+              </div>
+
               <h2 class="subtitle is-size-4-tablet">
                 Passionné, curieux, je suis à la recherche de mon prochain poste
               </h2>
               <img
                 class="image is-inline-block is-128x128"
-                src="./public/assets/react_logo.png"
+                src="./public/assets/react-logo.webp"
+                alt="logo react"
               />
             </div>
           </div>
           <div class="columns is-centered">
             <div class="column">
-              <div class="buttons is-centered">
-                <a class="button is-info navbar-item" href="#parallax-1"> About </a>
-                <a class="button is-info navbar-item" href="#parallax-2"> Skills </a>
-                <a class="button is-info navbar-item" href="#parallax-3"> Projects </a>
-                <a class="button is-info navbar-item" href="#contact"> Contact </a>
+              <div class="nav buttons is-centered">
+                <a class="button is-vcentered is-info navbar-item" href="#parallax-1">
+                  About
+                </a>
+                <a class="button is-info navbar-item" href="#parallax-2">
+                  Skills
+                </a>
+                <a class="button is-info navbar-item" href="#parallax-3">
+                  Projects
+                </a>
+                <a class="button is-info navbar-item" href="#contact">
+                  Contact
+                </a>
               </div>
             </div>
           </div>
@@ -134,7 +158,7 @@
               <div class="main_pict-elt">
                 <img
                   class="profil-pic"
-                  src="./public/assets/profil-pic.png"
+                  src="./public/assets/profil-pic.webp"
                   alt="Image qui représente le logo du language de développement web React"
                 />
               </div>
@@ -155,8 +179,9 @@
           </div>
           <div class="columns is-centered mt-6">
             <a
+              download="CV Christophe Gouteux - Web Dev React"
               class="button is-size-5-desktop has-text-weight-normal is-info"
-              href=""
+              href="./public/assets/cv/CV.pdf"
             >
               <span class="icon">
                 <i class="fas fa-download"></i>
@@ -166,10 +191,16 @@
           </div>
           <div class="column mt-6">
             <div class="buttons is-centered">
-              <a class="button is-black navbar-item" href=""
+              <a
+                class="button is-black navbar-item"
+                target="_blank"
+                href="https://github.com/gouteuxchristophe"
                 ><i class="mr-3 fa-brands fa-github"></i> Github
               </a>
-              <a class="button is-black navbar-item" href=""
+              <a
+                class="button is-black navbar-item"
+                target="_blank"
+                href="https://www.linkedin.com/in/christophe-gouteux-710033257"
                 ><i class="mr-3 fa-brands fa-linkedin"></i> Linkedin
               </a>
             </div>
@@ -190,52 +221,97 @@
                   class="skill-container column m-3 is-flex is-flex-direction-column is-align-items-center"
                 >
                   <h2 class="subtitle">Intégration web</h2>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/html5.png" />
-                  </figure>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/css3.png" />
-                  </figure>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/sass.png" />
-                  </figure>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/jquery.png" />
-                  </figure>
+                  <div>
+                    <div
+                      class="skill-items is-flex is-flex-wrap-wrap is-justify-content-center"
+                    >
+                      <figure class="image is-128x128">
+                        <img
+                          src="./public/assets/icon-dev/html5.webp"
+                          alt="logo html5"
+                        />
+                      </figure>
+                      <figure class="image is-128x128">
+                        <img
+                          src="./public/assets/icon-dev/css3.webp"
+                          alt="logo css"
+                        />
+                      </figure>
+                      <figure class="image is-128x128">
+                        <img
+                          src="./public/assets/icon-dev/sass.webp"
+                          alt="logo sass"
+                        />
+                      </figure>
+                      <figure class="image is-128x128">
+                        <img
+                          src="./public/assets/icon-dev/jquery.webp"
+                          alt="logo jquery"
+                        />
+                      </figure>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="skill-container column m-3 is-flex is-flex-direction-column is-align-items-center"
                 >
                   <h2 class="subtitle">Backend</h2>
-                  <figure class="image is-128x128">
-                    <img
-                      class="p-5"
-                      src="./public/assets/icon-dev/javascript.png"
-                    />
-                  </figure>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/nodejs.png" />
-                  </figure>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/postgres.png" />
-                  </figure>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/mysql.png" />
-                  </figure>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/express.png" />
-                  </figure>
+                  <div
+                    class="skill-items is-flex is-flex-wrap-wrap is-justify-content-center"
+                  >
+                    <figure class="image is-128x128">
+                      <img
+                        class="p-5"
+                        src="./public/assets/icon-dev/javascript.webp"
+                        alt="logo javascript"
+                      />
+                    </figure>
+                    <figure class="image is-128x128">
+                      <img
+                        src="./public/assets/icon-dev/nodejs.webp"
+                        alt="logo nodejs"
+                      />
+                    </figure>
+                    <figure class="image is-128x128">
+                      <img
+                        src="./public/assets/icon-dev/postgres.webp"
+                        alt="logo postgres"
+                      />
+                    </figure>
+                    <figure class="image is-128x128">
+                      <img
+                        src="./public/assets/icon-dev/mysql.webp"
+                        alt="logo mysql"
+                      />
+                    </figure>
+                    <figure class="image is-128x128">
+                      <img
+                        src="./public/assets/icon-dev/express.webp"
+                        alt="logo express"
+                      />
+                    </figure>
+                  </div>
                 </div>
                 <div
                   class="skill-container column m-3 is-flex is-flex-direction-column is-align-items-center"
                 >
                   <h2 class="subtitle">Gestion de projet</h2>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/github.png" />
-                  </figure>
-                  <figure class="image is-128x128">
-                    <img src="./public/assets/icon-dev/kanban.png" />
-                  </figure>
+                  <div
+                    class="skill-items is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center"
+                  >
+                    <figure class="image is-128x128">
+                      <img
+                        src="./public/assets/icon-dev/github.webp"
+                        alt="logo github"
+                      />
+                    </figure>
+                    <figure class="image is-128x128">
+                      <img
+                        src="./public/assets/icon-dev/kanban.webp"
+                        alt="logo kanban"
+                      />
+                    </figure>
+                  </div>
                 </div>
               </div>
             </div>
@@ -258,8 +334,8 @@
                   <div class="flipCardInner">
                     <div class="flipCardFront">
                       <img
-                        src="./public/assets/projects/webagency.png"
-                        alt=""
+                        src="./public/assets/projects/webagency.webp"
+                        alt="screenshot web agency"
                       />
                     </div>
                     <div class="flipCardBack">
@@ -284,7 +360,10 @@
                 <div class="column flipCard">
                   <div class="flipCardInner">
                     <div class="flipCardFront">
-                      <img src="/public/assets/projects/ireki.png" alt="" />
+                      <img
+                        src="/public/assets/projects/ireki.webp"
+                        alt="screenshot ireki"
+                      />
                     </div>
                     <div class="flipCardBack">
                       <p
@@ -310,8 +389,8 @@
                   <div class="flipCardInner">
                     <div class="flipCardFront">
                       <img
-                        src="/public/assets/projects/cyclicrouen.png"
-                        alt=""
+                        src="/public/assets/projects/cyclicrouen.webp"
+                        alt="screenshot cyclic rouen"
                       />
                     </div>
                     <div class="flipCardBack">
@@ -336,7 +415,10 @@
                 <div class="column flipCard">
                   <div class="flipCardInner">
                     <div class="flipCardFront">
-                      <img src="/public/assets/projects/game.png" alt="" />
+                      <img
+                        src="/public/assets/projects/game.webp"
+                        alt="screenshot game"
+                      />
                     </div>
                     <div class="flipCardBack">
                       <p
@@ -359,7 +441,10 @@
                 <div class="column flipCard">
                   <div class="flipCardInner">
                     <div class="flipCardFront">
-                      <img src="/public/assets/projects/todolist.png" alt="" />
+                      <img
+                        src="/public/assets/projects/todolist.webp"
+                        alt="screenshot todolist"
+                      />
                     </div>
                     <div class="flipCardBack">
                       <p
@@ -397,7 +482,7 @@
             >
               <a
                 class="button is-medium is-rounded"
-                href="https://linkedin.com/in/matthew-farley-32526014/"
+                href="https://www.linkedin.com/in/christophe-gouteux-710033257"
                 target="_blank"
                 ><span class="icon is-small"
                   ><i class="fab fa-linkedin-in fa-fw"></i></span></a
@@ -422,31 +507,32 @@
                   <div id="cube3d">
                     <img
                       class="face avant"
-                      src="./public/assets/logo_cube/brand-github.png"
+                      src="./public/assets/logo_cube/html-css.webp"
                       alt="Image qui représente le logo du langage web react sur une face du cube"
                     />
                     <img
                       class="face haut"
-                      src="./public/assets/logo_cube/sass.png"
+                      src="./public/assets/logo_cube/sass.webp"
                       alt="Image qui représente le logo du langage web sass sur une face du cube"
                     />
                     <img
                       class="face gauche"
-                      src="./public/assets/logo_cube/code-php.png"
+                      src="./public/assets/logo_cube/code-php.webp"
                       alt="lImage qui représente le logo du langage web javascript sur une face du cube"
                     />
                     <img
                       class="face droite"
-                      src="./public/assets/logo_cube/html_css.png"
+                      src="./public/assets/logo_cube/brand-github.webp"
                       alt="Image qui représente le logo du versionning github sur une face du cube"
                     />
                     <img
                       class="face bas"
-                      src="./public/assets/logo_cube/js.png"
+                      src="./public/assets/logo_cube/js.webp"
+                      alt="Image qui représente le logo du langage web javascript github sur une face du cube"
                     />
                     <img
                       class="face arriere"
-                      src="./public/assets/logo_cube/react.png"
+                      src="./public/assets/logo_cube/react.webp"
                       alt="Image qui représente le logo fullstack sur une face du cube"
                     />
                   </div>
@@ -465,8 +551,12 @@
         </p>
       </div>
     </footer>
+    <!-- Import des scripts JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="./public/js/app.js"></script>
   </body>
-  <!-- Import des scripts JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-  <script src="./public/js/app.js"></script>
 </html>

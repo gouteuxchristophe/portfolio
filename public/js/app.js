@@ -1,7 +1,8 @@
-bulmaCarousel.attach('#carousel-title', {
-    autoplay: true,
-    // loop: true,
-    // navigation: false,
-    // pagination: false,
+$(".slider").slick({
+  vertical: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 300,
 });
-                                                                       
+
+

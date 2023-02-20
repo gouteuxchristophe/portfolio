@@ -1,197 +1,233 @@
 body {
-    font-family: 'Bree Serif', serif;
+  font-family: 'Bree Serif', serif;
 }
-
 
 .subtitle {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
-
 .main_pict-elt {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid #e3e3e3;
-    border-radius: 50%;
-    box-shadow: 0 0 25px 5px #ffffff;
-    overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #e3e3e3;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 5px #ffffff;
+  overflow: hidden;
 }
 
 .content-divider {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .skill-container {
-    background-color: rgba(28, 26, 27, 0.5);
-    border-radius: 15px;
+  background-color: rgba(28, 26, 27, 0.5);
+  border-radius: 15px;
 }
 
 .skill-container img {
-    padding: 1rem;
-    border: 5px solid #e3e3e3;
-    border-radius: 50%;
-    box-shadow: 0 0 25px 5px #ffffff;
+  padding: 1rem;
+  border: 5px solid #e3e3e3;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 5px #ffffff;
 }
 
 /* Projects */
 
-.flipCard{
-    width: 22%;
-    height: 300px;
-    background-color: transparent;
-    flex: none;
-    margin-bottom: 10px;
-    padding: 0px;
-  }
-   
-  .flipCardInner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-   
-  .flipCard:hover .flipCardInner{
-    transform: rotateY(180deg);
-  }
-   
-  .flipCardFront, .flipCardBack{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 15px;
-  }
+.flipCard {
+  width: 22%;
+  height: 300px;
+  background-color: transparent;
+  flex: none;
+  margin-bottom: 10px;
+  padding: 0px;
+}
 
-.flipCardFront img{
-    display: block;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-   
-.flipCardBack{
-    background-color: rgba(28, 26, 27, 0.5);
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
 }
-   
-@media (max-width:768px){
-    .flipCard{
-      width: 45%;
-    }
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  border-radius: 15px;
 }
-   
-@media (max-width:426px){
-    .flipCard{
-      width: 100%;
-    }
-   
+
+.flipCardFront img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.flipCardBack {
+  background-color: rgba(28, 26, 27, 0.5);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:768px) {
+  .flipCard {
+    width: 45%;
   }
+}
+
+@media (max-width:426px) {
+  .flipCard {
+    width: 80%;
+  }
+}
 
 /* Gestion de l'effet cube en roration */
 .face {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-  }
-  
-  .avant {
-    transform: translateZ(50px);
-  }
-  
-  .haut {
-    transform: rotateX(90deg) translateZ(50px);
-  }
-  
-  .gauche {
-    transform: rotateY(-90deg) translateZ(50px);
-  }
-  
-  .droite {
-    transform: rotateY(90deg) translateZ(50px);
-  }
-  
-  .bas {
-    transform: rotateX(-90deg) translateZ(50px);
-  }
-  
-  .arriere {
-    transform: rotateY(-180deg) translateZ(50px);
-  }
-  
-  #cube3a,
-  #cube3b,
-  #cube3c,
-  #cube3d {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    margin-top: 2rem;
-    transform-style: preserve-3d;
-  }
-  
-  #cube3a {
-    perspective: 800px;
-  }
-  
-  #cube3b {
-    animation: rotationX 5s ease infinite;
-  }
-  
-  #cube3c {
-    animation: rotationY 7s ease infinite;
-  }
-  
-  #cube3d {
-    animation: rotationZ 9s ease infinite;
-  }
-  
-  @keyframes cube {
-    from {
-      transform: rotateY(-20deg) rotateX(-20deg);
-    }
-    to {
-      transform: rotateY(-380deg) rotateX(-20deg);
-    }
-  }
-  @keyframes rotationX {
-    from {
-      transform: rotateX(30deg);
-    }
-    to {
-      transform: rotateX(390deg);
-    }
-  }
-  @keyframes rotationY {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(360deg);
-    }
-  }
-  @keyframes rotationZ {
-    from {
-      transform: rotateZ(0deg);
-    }
-    to {
-      transform: rotateZ(360deg);
-    }
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.avant {
+  transform: translateZ(50px);
+}
+
+.haut {
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.gauche {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.droite {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.bas {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+.arriere {
+  transform: rotateY(-180deg) translateZ(50px);
+}
+
+#cube3a,
+#cube3b,
+#cube3c,
+#cube3d {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  transform-style: preserve-3d;
+}
+
+#cube3a {
+  perspective: 800px;
+}
+
+#cube3b {
+  animation: rotationX 5s ease infinite;
+}
+
+#cube3c {
+  animation: rotationY 7s ease infinite;
+}
+
+#cube3d {
+  animation: rotationZ 9s ease infinite;
+}
+
+@keyframes cube {
+  from {
+    transform: rotateY(-20deg) rotateX(-20deg);
   }
 
-/* .slider-navigation-next, .slider-navigation-previous {
-    display: none;
-} */
+  to {
+    transform: rotateY(-380deg) rotateX(-20deg);
+  }
+}
+
+@keyframes rotationX {
+  from {
+    transform: rotateX(30deg);
+  }
+
+  to {
+    transform: rotateX(390deg);
+  }
+}
+
+@keyframes rotationY {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotationZ {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+/* Slider title */
+.slider-item {
+  width: 100%;
+}
+
+.slick-next,
+.slick-prev {
+  display: none !important;
+}
+
+/* skill item */
+.skill-items {
+  gap: 2rem;
+}
+
+@media (max-width:426px) {
+  .skill-items {
+    gap: 1rem;
+  }
+  .skill-items figure {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .skill-items img {
+    width: 100% !important;
+  }
+}
+
+/* button */
+.nav .button {
+  width: 80px;
+}

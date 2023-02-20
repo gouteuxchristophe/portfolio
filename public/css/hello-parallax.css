@@ -45,7 +45,7 @@
   }
   
   #parallax-1 {
-    background: url('../assets/developpeurweb.jpg');
+    background: url('../assets/developpeurweb.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
   }
   
   #parallax-2 {
-    background: url('../assets/parallax/parallax-2.jpg');
+    background: url('../assets/parallax/parallax-2.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@
   }
   
   #parallax-3 {
-    background: url('../assets/parallax/parallax-3.jpg');
+    background: url('../assets/parallax/parallax-3.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
